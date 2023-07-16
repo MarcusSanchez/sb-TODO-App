@@ -36,7 +36,6 @@ function createTodoItem(text, todoID) {
     for (let todo of todos) {
       if (todo.id === todoID) {
         todo.crossed = !todo.crossed;
-        console.log(todo);
         localStorage.setItem('todos', JSON.stringify(todos));
         return;
       }
